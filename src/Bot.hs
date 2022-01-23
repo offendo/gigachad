@@ -23,7 +23,7 @@ import System.IO.Unsafe (unsafePerformIO)
 
 -- | Discord bot auth token
 authtoken :: Text
-authtoken = pack . unsafePerformIO . readFile $ "../auth-token.txt"
+authtoken = pack . unsafePerformIO . readFile $ "./auth-token.txt"
 
 -- | Integer representation of Discord permissions
 permissions :: Int
